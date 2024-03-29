@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct GitTrack_iOSApp: App {
+struct GitTrackApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
