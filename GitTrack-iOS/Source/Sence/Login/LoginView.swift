@@ -1,13 +1,8 @@
-//
-//  LoginView.swift
-//  GitTrack-iOS
-//
-//  Created by 김주영 on 3/26/24.
-//
-
 import SwiftUI
 
 struct LoginView: View {
+    @StateObject var viewModel = LoginViewModel()
+    @Environment(\.presentationMode) var dismiss
     var body: some View {
         VStack {
             Text("GitTrack")
@@ -16,7 +11,7 @@ struct LoginView: View {
             Text("Project, Git 분석을 위한")
                 .font(.body1Medium)
                 .foregroundStyle(.blue800)
-
+            
             Link(destination: URL(string: "http://localhost:8080/oauth2/authorization/github")!) {
                 HStack {
                     Image(.githubLogo)
@@ -35,8 +30,15 @@ struct LoginView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.blue50).ignoresSafeArea())
         .onOpenURL { url in
-            Token.accessToken = url.absoluteString.components(separatedBy: "code=").last ?? ""
+            let code = url.absoluteString.components(separatedBy: "code=").last ?? ""
+            viewModel.getAccessToken(code: code.components(separatedBy: "&state=").first!)
+            dismiss.wrappedValue.dismiss()
+//            viewModel.loginSuccess = true
         }
+//        .fullScreenCover(isPresented: $viewModel.loginSuccess) {
+//            HomeView()
+//        }
+        
     }
 }
 
