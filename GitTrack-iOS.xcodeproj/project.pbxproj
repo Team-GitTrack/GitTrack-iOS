@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720233A52BD60D3E009BF1D3 /* OrganizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720233A42BD60D3E009BF1D3 /* OrganizationView.swift */; };
 		724D44762BA14F2F008FFC5A /* GitTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D44752BA14F2F008FFC5A /* GitTrackApp.swift */; };
 		724D44782BA14F2F008FFC5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D44772BA14F2F008FFC5A /* ContentView.swift */; };
 		724D447A2BA14F30008FFC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724D44792BA14F30008FFC5A /* Assets.xcassets */; };
@@ -46,11 +47,12 @@
 		72EC902A2BD0DF0700BC6AFE /* OrganizationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC90292BD0DF0700BC6AFE /* OrganizationsResponse.swift */; };
 		72EC902C2BD1269A00BC6AFE /* IssuesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC902B2BD1269A00BC6AFE /* IssuesResponse.swift */; };
 		72EC902E2BD126EF00BC6AFE /* IssueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC902D2BD126EF00BC6AFE /* IssueEntity.swift */; };
-		72F086EA2BBFBBC900220B63 /* OrganizationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F086E92BBFBBC900220B63 /* OrganizationInfoView.swift */; };
+		72F086EA2BBFBBC900220B63 /* OrganizationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F086E92BBFBBC900220B63 /* OrganizationListView.swift */; };
 		72F086EC2BBFD5D500220B63 /* OrganzationInfoTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F086EB2BBFD5D500220B63 /* OrganzationInfoTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720233A42BD60D3E009BF1D3 /* OrganizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationView.swift; sourceTree = "<group>"; };
 		724D44722BA14F2F008FFC5A /* GitTrack-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitTrack-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724D44752BA14F2F008FFC5A /* GitTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTrackApp.swift; sourceTree = "<group>"; };
 		724D44772BA14F2F008FFC5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,7 +89,7 @@
 		72EC90292BD0DF0700BC6AFE /* OrganizationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsResponse.swift; sourceTree = "<group>"; };
 		72EC902B2BD1269A00BC6AFE /* IssuesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesResponse.swift; sourceTree = "<group>"; };
 		72EC902D2BD126EF00BC6AFE /* IssueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueEntity.swift; sourceTree = "<group>"; };
-		72F086E92BBFBBC900220B63 /* OrganizationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationInfoView.swift; sourceTree = "<group>"; };
+		72F086E92BBFBBC900220B63 /* OrganizationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationListView.swift; sourceTree = "<group>"; };
 		72F086EB2BBFD5D500220B63 /* OrganzationInfoTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganzationInfoTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720233A22BD60CE4009BF1D3 /* Organization */ = {
+			isa = PBXGroup;
+			children = (
+				720233A32BD60D20009BF1D3 /* Component */,
+				720233A42BD60D3E009BF1D3 /* OrganizationView.swift */,
+			);
+			path = Organization;
+			sourceTree = "<group>";
+		};
+		720233A32BD60D20009BF1D3 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		724D44692BA14F2F008FFC5A = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +220,7 @@
 		72B6C3492BB0638D007794FB /* Sence */ = {
 			isa = PBXGroup;
 			children = (
+				720233A22BD60CE4009BF1D3 /* Organization */,
 				72EC90222BCF668300BC6AFE /* Onbording */,
 				7275E3A82BB684D3005BCEBF /* Home */,
 				72B6C34A2BB063AE007794FB /* Login */,
@@ -278,7 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				729291612BBC23200095CFC9 /* UserInfoView.swift */,
-				72F086E92BBFBBC900220B63 /* OrganizationInfoView.swift */,
+				72F086E92BBFBBC900220B63 /* OrganizationListView.swift */,
 				72F086EB2BBFD5D500220B63 /* OrganzationInfoTitle.swift */,
 				72EC901A2BCE844600BC6AFE /* IssueType.swift */,
 				72EC901C2BCE898C00BC6AFE /* IssueTypeButtonsView.swift */,
@@ -406,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				726E7F752BC2E0DD001DD2D1 /* ImageView.swift in Sources */,
+				720233A52BD60D3E009BF1D3 /* OrganizationView.swift in Sources */,
 				72EC90162BC8B5FF00BC6AFE /* HomeViewModel.swift in Sources */,
 				72EC90142BC8B23200BC6AFE /* UserInfoResponse.swift in Sources */,
 				72EC90192BC8B93D00BC6AFE /* UserInfoEntity.swift in Sources */,
@@ -420,7 +440,7 @@
 				729291622BBC23200095CFC9 /* UserInfoView.swift in Sources */,
 				72EC90242BCF66A000BC6AFE /* OnbordingView.swift in Sources */,
 				7275E3A72BB68188005BCEBF /* Header.swift in Sources */,
-				72F086EA2BBFBBC900220B63 /* OrganizationInfoView.swift in Sources */,
+				72F086EA2BBFBBC900220B63 /* OrganizationListView.swift in Sources */,
 				72CE9A6C2BBC0F4F00D514FB /* MoyaLoggingPlugin.swift in Sources */,
 				72CE9A692BBC0B9C00D514FB /* TokenResponse.swift in Sources */,
 				724D44782BA14F2F008FFC5A /* ContentView.swift in Sources */,

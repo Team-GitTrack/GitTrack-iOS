@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct OrganizationInfoView: View {
+struct OrganizationListView: View {
     let url: String
     let organizationName: String
     let discription: String
@@ -17,15 +17,15 @@ struct OrganizationInfoView: View {
             )
             .padding(.bottom, 10)
             
-            Button(action: {
-                print("sldjfhl")
-            }, label: {
+            NavigationLink(
+                destination: OrganizationView(organizationName: organizationName)
+            ) {
                 Text("더보기")
                     .font(.caption1Medium)
                     .foregroundStyle(.white)
                     .padding(.horizontal, 60)
                     .padding(.vertical, 16)
-            })
+            }
             .frame(width: 160, height: 49)
             .background(.blue500)
             .cornerRadius(16)

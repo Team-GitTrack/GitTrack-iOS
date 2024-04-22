@@ -10,7 +10,7 @@ struct HomeView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: 16) {
                     ForEach(viewModel.organizations, id: \.self) {
-                        OrganizationInfoView(
+                        OrganizationListView(
                             url: $0.avatarURL,
                             organizationName: $0.login,
                             discription: $0.description
@@ -47,7 +47,7 @@ struct HomeView: View {
             
             Spacer()
         }
-        .padding(.horizontal, 16)
+        .padding(16)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.blue50).ignoresSafeArea())
         .onAppear {
