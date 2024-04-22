@@ -1,10 +1,3 @@
-//
-//  OrganizationInfoView.swift
-//  GitTrack-iOS
-//
-//  Created by 김주영 on 4/5/24.
-//
-
 import SwiftUI
 
 struct OrganizationInfoView: View {
@@ -14,16 +7,16 @@ struct OrganizationInfoView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             ImageView(imageUrl: url)
-            .frame(width: 100, height: 100)
-            .cornerRadius(100)
-            .padding(.bottom, 5)
+                .frame(width: 100, height: 100)
+                .cornerRadius(100)
+                .padding(.bottom, 5)
             
             OrganzationInfoTitle(
                 organizationName: organizationName,
                 description: discription
             )
             .padding(.bottom, 10)
-
+            
             Button(action: {
                 print("sldjfhl")
             }, label: {
@@ -42,9 +35,4 @@ struct OrganizationInfoView: View {
         .frame(width: 192, alignment: .center)
         .cornerRadius(32)
     }
-}
-
-#Preview {
-    OrganizationInfoView(url: "https://www.tygerauto.com/mm5/graphics/photos/test-sku.jpg",
-                         organizationName: "XQAURE", discription: "대덕소프트웨어마이스터고등학교")
 }

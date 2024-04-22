@@ -1,10 +1,3 @@
-//
-//  UserInfoView.swift
-//  GitTrack-iOS
-//
-//  Created by 김주영 on 4/2/24.
-//
-
 import SwiftUI
 
 struct UserInfoView: View {
@@ -37,8 +30,4 @@ struct UserInfoView: View {
         .background(.white)
         .cornerRadius(16)
     }
-}
-
-#Preview {
-    UserInfoView(url: "https://www.tygerauto.com/mm5/graphics/photos/test-sku.jpg", username: "jyk1029", email: "jyk1029@gmail.com", followers: 70)
 }

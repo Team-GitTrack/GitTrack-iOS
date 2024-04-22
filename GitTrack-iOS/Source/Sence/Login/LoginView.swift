@@ -33,11 +33,11 @@ struct LoginView: View {
             let code = url.absoluteString.components(separatedBy: "code=").last ?? ""
             viewModel.getAccessToken(code: code.components(separatedBy: "&state=").first!)
             dismiss.wrappedValue.dismiss()
-//            viewModel.loginSuccess = true
+            viewModel.loginSuccess = true
         }
-//        .fullScreenCover(isPresented: $viewModel.loginSuccess) {
-//            HomeView()
-//        }
+        .fullScreenCover(isPresented: $viewModel.loginSuccess) {
+            HomeView()
+        }
         
     }
 }

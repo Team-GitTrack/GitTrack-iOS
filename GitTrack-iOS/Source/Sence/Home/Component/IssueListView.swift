@@ -1,10 +1,3 @@
-//
-//  PRListView.swift
-//  GitTrack-iOS
-//
-//  Created by 김주영 on 4/16/24.
-//
-
 import SwiftUI
 
 struct IssueListView: View {
@@ -28,8 +21,4 @@ struct IssueListView: View {
                 .foregroundStyle(.black)
         }
     }
-}
-
-#Preview {
-    IssueListView(fullName: "sldkjf", title: "sldhflshdlfhlksjf", number: 1233)
 }
