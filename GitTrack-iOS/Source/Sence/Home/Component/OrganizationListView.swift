@@ -3,7 +3,7 @@ import SwiftUI
 struct OrganizationListView: View {
     let url: String
     let organizationName: String
-    let discription: String
+    let description: String
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             ImageView(imageUrl: url)
@@ -11,14 +11,14 @@ struct OrganizationListView: View {
                 .cornerRadius(100)
                 .padding(.bottom, 5)
             
-            OrganzationInfoTitle(
+            OrganzationInfoSummaryView(
                 organizationName: organizationName,
-                description: discription
+                description: description
             )
             .padding(.bottom, 10)
             
             NavigationLink(
-                destination: OrganizationView(organizationName: organizationName)
+                destination: OrganizationView(organizationName: organizationName, description: description)
             ) {
                 Text("더보기")
                     .font(.caption1Medium)

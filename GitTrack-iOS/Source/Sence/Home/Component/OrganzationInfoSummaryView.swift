@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct OrganzationInfoTitle: View {
+struct OrganzationInfoSummaryView: View {
     
     let organizationName: String
     let description: String

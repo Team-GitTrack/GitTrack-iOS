@@ -13,7 +13,7 @@ struct HomeView: View {
                         OrganizationListView(
                             url: $0.avatarURL,
                             organizationName: $0.login,
-                            discription: $0.description
+                            description: $0.description
                         )
                     }
                 }

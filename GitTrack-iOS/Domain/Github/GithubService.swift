@@ -29,4 +29,16 @@ public class GithubService {
             .map(IssuesResponse.self)
             .map { $0.toDomain() }
     }
+    
+    func getOrganizationMembers(organization: String) -> Single<[OrganizationMemberEntity]> {
+        provider.rx.request(.getOrganizationMemberList(organization: organization))
+            .map(OrganizationMembersResponse.self)
+            .map { $0.toDomain() }
+    }
+    
+    func getOrganizationRepos(organization: String) -> Single<[OrganizationReposEntity]> {
+        provider.rx.request(.getOrganizationRepos(organization: organization))
+            .map(OrganizationReposResponse.self)
+            .map { $0.toDomain() }
+    }
 }

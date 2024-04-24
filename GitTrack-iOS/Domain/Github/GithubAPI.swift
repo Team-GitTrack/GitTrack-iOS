@@ -6,6 +6,8 @@ enum GithubAPI {
     case getUserInfo
     case getOrganizations
     case getIssues(filter: IssueType)
+    case getOrganizationMemberList(organization: String)
+    case getOrganizationRepos(organization: String)
 }
 
 extension GithubAPI: TargetType {
@@ -23,6 +25,10 @@ extension GithubAPI: TargetType {
             return "/organizations"
         case .getIssues:
             return "/issues"
+        case let .getOrganizationMemberList(organization):
+            return "/\(organization)/members"
+        case let .getOrganizationRepos(organization):
+            return "/\(organization)/repos"
         }
     }
     
@@ -30,7 +36,7 @@ extension GithubAPI: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .getAccessToken, .getUserInfo, .getOrganizations, .getIssues:
+        case .getAccessToken, .getUserInfo, .getOrganizations, .getIssues, .getOrganizationMemberList, .getOrganizationRepos:
             return .get
         }
     }
@@ -53,7 +59,7 @@ extension GithubAPI: TargetType {
         switch self {
         case .getAccessToken:
             return Header.tokenIsEmpty.header()
-        case .getUserInfo, .getOrganizations, .getIssues:
+        case .getUserInfo, .getOrganizations, .getIssues, .getOrganizationMemberList, .getOrganizationRepos:
             return Header.accessToken.header()
         }
     }

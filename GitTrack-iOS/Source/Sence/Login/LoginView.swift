@@ -32,8 +32,6 @@ struct LoginView: View {
         .onOpenURL { url in
             let code = url.absoluteString.components(separatedBy: "code=").last ?? ""
             viewModel.getAccessToken(code: code.components(separatedBy: "&state=").first!)
-            dismiss.wrappedValue.dismiss()
-            viewModel.loginSuccess = true
         }
         .fullScreenCover(isPresented: $viewModel.loginSuccess) {
             HomeView()

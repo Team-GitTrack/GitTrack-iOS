@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		720233A52BD60D3E009BF1D3 /* OrganizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720233A42BD60D3E009BF1D3 /* OrganizationView.swift */; };
+		7241639B2BD73EF700E6916C /* CustomNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7241639A2BD73EF700E6916C /* CustomNavigationBarView.swift */; };
+		7241639F2BD7416300E6916C /* View + CustomNavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7241639E2BD7416300E6916C /* View + CustomNavigationBarModifier.swift */; };
+		724163A12BD8885C00E6916C /* OrganizationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163A02BD8885C00E6916C /* OrganizationInfoView.swift */; };
+		724163A32BD88FFB00E6916C /* OrganizationMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163A22BD88FFB00E6916C /* OrganizationMemberView.swift */; };
+		724163A52BD892AD00E6916C /* OrganizationMemberListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163A42BD892AD00E6916C /* OrganizationMemberListView.swift */; };
+		724163A72BD8974F00E6916C /* OrganizationMembersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163A62BD8974F00E6916C /* OrganizationMembersResponse.swift */; };
+		724163A92BD8978300E6916C /* OrganizationMemberEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163A82BD8978300E6916C /* OrganizationMemberEntity.swift */; };
+		724163AB2BD8982100E6916C /* OrganizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163AA2BD8982100E6916C /* OrganizationViewModel.swift */; };
+		724163AD2BD8A1B300E6916C /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163AC2BD8A1B300E6916C /* RepositoryListView.swift */; };
+		724163AF2BD8A26100E6916C /* RepositoryInfoSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163AE2BD8A26100E6916C /* RepositoryInfoSummaryView.swift */; };
+		724163B12BD8C83D00E6916C /* OrganizationReposEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163B02BD8C83D00E6916C /* OrganizationReposEntity.swift */; };
+		724163B32BD8C97F00E6916C /* OrganizationReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163B22BD8C97F00E6916C /* OrganizationReposResponse.swift */; };
 		724D44762BA14F2F008FFC5A /* GitTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D44752BA14F2F008FFC5A /* GitTrackApp.swift */; };
 		724D44782BA14F2F008FFC5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D44772BA14F2F008FFC5A /* ContentView.swift */; };
 		724D447A2BA14F30008FFC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724D44792BA14F30008FFC5A /* Assets.xcassets */; };
@@ -18,7 +30,7 @@
 		72749D332BC42438005BFDCD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 72749D322BC42438005BFDCD /* RxCocoa */; };
 		72749D352BC42438005BFDCD /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 72749D342BC42438005BFDCD /* RxRelay */; };
 		72749D372BC42438005BFDCD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72749D362BC42438005BFDCD /* RxSwift */; };
-		72749D392BC5208F005BFDCD /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72749D382BC5208F005BFDCD /* CountView.swift */; };
+		72749D392BC5208F005BFDCD /* IsPrivateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72749D382BC5208F005BFDCD /* IsPrivateView.swift */; };
 		7275E3A72BB68188005BCEBF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7275E3A62BB68188005BCEBF /* Header.swift */; };
 		7275E3AA2BB6851F005BCEBF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7275E3A92BB6851F005BCEBF /* HomeView.swift */; };
 		729291622BBC23200095CFC9 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729291612BBC23200095CFC9 /* UserInfoView.swift */; };
@@ -48,18 +60,30 @@
 		72EC902C2BD1269A00BC6AFE /* IssuesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC902B2BD1269A00BC6AFE /* IssuesResponse.swift */; };
 		72EC902E2BD126EF00BC6AFE /* IssueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC902D2BD126EF00BC6AFE /* IssueEntity.swift */; };
 		72F086EA2BBFBBC900220B63 /* OrganizationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F086E92BBFBBC900220B63 /* OrganizationListView.swift */; };
-		72F086EC2BBFD5D500220B63 /* OrganzationInfoTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F086EB2BBFD5D500220B63 /* OrganzationInfoTitle.swift */; };
+		72F086EC2BBFD5D500220B63 /* OrganzationInfoSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F086EB2BBFD5D500220B63 /* OrganzationInfoSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		720233A42BD60D3E009BF1D3 /* OrganizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationView.swift; sourceTree = "<group>"; };
+		7241639A2BD73EF700E6916C /* CustomNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarView.swift; sourceTree = "<group>"; };
+		7241639E2BD7416300E6916C /* View + CustomNavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + CustomNavigationBarModifier.swift"; sourceTree = "<group>"; };
+		724163A02BD8885C00E6916C /* OrganizationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationInfoView.swift; sourceTree = "<group>"; };
+		724163A22BD88FFB00E6916C /* OrganizationMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationMemberView.swift; sourceTree = "<group>"; };
+		724163A42BD892AD00E6916C /* OrganizationMemberListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationMemberListView.swift; sourceTree = "<group>"; };
+		724163A62BD8974F00E6916C /* OrganizationMembersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationMembersResponse.swift; sourceTree = "<group>"; };
+		724163A82BD8978300E6916C /* OrganizationMemberEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationMemberEntity.swift; sourceTree = "<group>"; };
+		724163AA2BD8982100E6916C /* OrganizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationViewModel.swift; sourceTree = "<group>"; };
+		724163AC2BD8A1B300E6916C /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
+		724163AE2BD8A26100E6916C /* RepositoryInfoSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInfoSummaryView.swift; sourceTree = "<group>"; };
+		724163B02BD8C83D00E6916C /* OrganizationReposEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationReposEntity.swift; sourceTree = "<group>"; };
+		724163B22BD8C97F00E6916C /* OrganizationReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationReposResponse.swift; sourceTree = "<group>"; };
 		724D44722BA14F2F008FFC5A /* GitTrack-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitTrack-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724D44752BA14F2F008FFC5A /* GitTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTrackApp.swift; sourceTree = "<group>"; };
 		724D44772BA14F2F008FFC5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		724D44792BA14F30008FFC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724D447C2BA14F30008FFC5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		726E7F742BC2E0DD001DD2D1 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		72749D382BC5208F005BFDCD /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
+		72749D382BC5208F005BFDCD /* IsPrivateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrivateView.swift; sourceTree = "<group>"; };
 		7275E3A62BB68188005BCEBF /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		7275E3A92BB6851F005BCEBF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		729291612BBC23200095CFC9 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
@@ -90,7 +114,7 @@
 		72EC902B2BD1269A00BC6AFE /* IssuesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesResponse.swift; sourceTree = "<group>"; };
 		72EC902D2BD126EF00BC6AFE /* IssueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueEntity.swift; sourceTree = "<group>"; };
 		72F086E92BBFBBC900220B63 /* OrganizationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationListView.swift; sourceTree = "<group>"; };
-		72F086EB2BBFD5D500220B63 /* OrganzationInfoTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganzationInfoTitle.swift; sourceTree = "<group>"; };
+		72F086EB2BBFD5D500220B63 /* OrganzationInfoSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganzationInfoSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +138,7 @@
 			children = (
 				720233A32BD60D20009BF1D3 /* Component */,
 				720233A42BD60D3E009BF1D3 /* OrganizationView.swift */,
+				724163AA2BD8982100E6916C /* OrganizationViewModel.swift */,
 			);
 			path = Organization;
 			sourceTree = "<group>";
@@ -121,6 +146,12 @@
 		720233A32BD60D20009BF1D3 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				72749D382BC5208F005BFDCD /* IsPrivateView.swift */,
+				724163A02BD8885C00E6916C /* OrganizationInfoView.swift */,
+				724163A22BD88FFB00E6916C /* OrganizationMemberView.swift */,
+				724163A42BD892AD00E6916C /* OrganizationMemberListView.swift */,
+				724163AC2BD8A1B300E6916C /* RepositoryListView.swift */,
+				724163AE2BD8A26100E6916C /* RepositoryInfoSummaryView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -251,7 +282,6 @@
 			isa = PBXGroup;
 			children = (
 				726E7F742BC2E0DD001DD2D1 /* ImageView.swift */,
-				72749D382BC5208F005BFDCD /* CountView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -259,6 +289,8 @@
 		72B6C3512BB0649E007794FB /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				7241639A2BD73EF700E6916C /* CustomNavigationBarView.swift */,
+				7241639E2BD7416300E6916C /* View + CustomNavigationBarModifier.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -281,6 +313,8 @@
 				72EC90132BC8B23200BC6AFE /* UserInfoResponse.swift */,
 				72EC90292BD0DF0700BC6AFE /* OrganizationsResponse.swift */,
 				72EC902B2BD1269A00BC6AFE /* IssuesResponse.swift */,
+				724163A62BD8974F00E6916C /* OrganizationMembersResponse.swift */,
+				724163B22BD8C97F00E6916C /* OrganizationReposResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -296,9 +330,9 @@
 		72CE9A6F2BBC185400D514FB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				72F086EB2BBFD5D500220B63 /* OrganzationInfoSummaryView.swift */,
 				729291612BBC23200095CFC9 /* UserInfoView.swift */,
 				72F086E92BBFBBC900220B63 /* OrganizationListView.swift */,
-				72F086EB2BBFD5D500220B63 /* OrganzationInfoTitle.swift */,
 				72EC901A2BCE844600BC6AFE /* IssueType.swift */,
 				72EC901C2BCE898C00BC6AFE /* IssueTypeButtonsView.swift */,
 				72EC901E2BCE8D9500BC6AFE /* IssueTypeButton.swift */,
@@ -325,6 +359,8 @@
 				72EC90182BC8B93D00BC6AFE /* UserInfoEntity.swift */,
 				72EC90272BD0DED300BC6AFE /* OrganizationEntity.swift */,
 				72EC902D2BD126EF00BC6AFE /* IssueEntity.swift */,
+				724163A82BD8978300E6916C /* OrganizationMemberEntity.swift */,
+				724163B02BD8C83D00E6916C /* OrganizationReposEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -425,33 +461,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				726E7F752BC2E0DD001DD2D1 /* ImageView.swift in Sources */,
+				724163A12BD8885C00E6916C /* OrganizationInfoView.swift in Sources */,
 				720233A52BD60D3E009BF1D3 /* OrganizationView.swift in Sources */,
 				72EC90162BC8B5FF00BC6AFE /* HomeViewModel.swift in Sources */,
 				72EC90142BC8B23200BC6AFE /* UserInfoResponse.swift in Sources */,
+				724163A52BD892AD00E6916C /* OrganizationMemberListView.swift in Sources */,
 				72EC90192BC8B93D00BC6AFE /* UserInfoEntity.swift in Sources */,
 				72EC90262BCF673800BC6AFE /* OnbordingViewModel.swift in Sources */,
 				72DF4CE72BB24BB70003BB6C /* Font.swift in Sources */,
 				72DF4CE22BB246300003BB6C /* LoginView.swift in Sources */,
 				729900722BB432DC000A9614 /* GithubService.swift in Sources */,
-				72F086EC2BBFD5D500220B63 /* OrganzationInfoTitle.swift in Sources */,
+				72F086EC2BBFD5D500220B63 /* OrganzationInfoSummaryView.swift in Sources */,
+				724163A92BD8978300E6916C /* OrganizationMemberEntity.swift in Sources */,
 				72EC901D2BCE898C00BC6AFE /* IssueTypeButtonsView.swift in Sources */,
+				724163B12BD8C83D00E6916C /* OrganizationReposEntity.swift in Sources */,
 				72EC901F2BCE8D9500BC6AFE /* IssueTypeButton.swift in Sources */,
+				724163AF2BD8A26100E6916C /* RepositoryInfoSummaryView.swift in Sources */,
+				724163A32BD88FFB00E6916C /* OrganizationMemberView.swift in Sources */,
 				72EC90282BD0DED300BC6AFE /* OrganizationEntity.swift in Sources */,
 				729291622BBC23200095CFC9 /* UserInfoView.swift in Sources */,
 				72EC90242BCF66A000BC6AFE /* OnbordingView.swift in Sources */,
 				7275E3A72BB68188005BCEBF /* Header.swift in Sources */,
 				72F086EA2BBFBBC900220B63 /* OrganizationListView.swift in Sources */,
+				724163B32BD8C97F00E6916C /* OrganizationReposResponse.swift in Sources */,
+				724163AD2BD8A1B300E6916C /* RepositoryListView.swift in Sources */,
+				7241639B2BD73EF700E6916C /* CustomNavigationBarView.swift in Sources */,
 				72CE9A6C2BBC0F4F00D514FB /* MoyaLoggingPlugin.swift in Sources */,
 				72CE9A692BBC0B9C00D514FB /* TokenResponse.swift in Sources */,
 				724D44782BA14F2F008FFC5A /* ContentView.swift in Sources */,
+				724163AB2BD8982100E6916C /* OrganizationViewModel.swift in Sources */,
 				72B0C1DC2BB2DC79002A0CF6 /* GithubAPI.swift in Sources */,
 				72EC901B2BCE844600BC6AFE /* IssueType.swift in Sources */,
 				7275E3AA2BB6851F005BCEBF /* HomeView.swift in Sources */,
+				7241639F2BD7416300E6916C /* View + CustomNavigationBarModifier.swift in Sources */,
 				724D44762BA14F2F008FFC5A /* GitTrackApp.swift in Sources */,
 				72EC902A2BD0DF0700BC6AFE /* OrganizationsResponse.swift in Sources */,
-				72749D392BC5208F005BFDCD /* CountView.swift in Sources */,
+				72749D392BC5208F005BFDCD /* IsPrivateView.swift in Sources */,
 				72CE9A632BBBF67800D514FB /* LoginViewModel.swift in Sources */,
 				72EC902E2BD126EF00BC6AFE /* IssueEntity.swift in Sources */,
+				724163A72BD8974F00E6916C /* OrganizationMembersResponse.swift in Sources */,
 				72EC902C2BD1269A00BC6AFE /* IssuesResponse.swift in Sources */,
 				72EC90212BCE972C00BC6AFE /* IssueListView.swift in Sources */,
 			);

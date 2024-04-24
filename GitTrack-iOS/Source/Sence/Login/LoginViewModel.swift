@@ -8,7 +8,10 @@ class LoginViewModel: ObservableObject {
     private let disposeBag = DisposeBag()
     func getAccessToken(code: String) {
         githubService.getAccessToken(code: code)
-            .subscribe(onSuccess: { Token.accessToken = $0.accessToken })
+            .subscribe(onSuccess: { [weak self] in
+                Token.accessToken = $0.accessToken
+                self?.loginSuccess = true
+            })
             .disposed(by: disposeBag)
     }
 }
