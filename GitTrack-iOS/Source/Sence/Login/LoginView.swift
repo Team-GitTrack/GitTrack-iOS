@@ -12,7 +12,7 @@ struct LoginView: View {
                 .font(.body1Medium)
                 .foregroundStyle(.blue800)
             
-            Link(destination: URL(string: "http://localhost:8080/oauth2/authorization/github")!) {
+            Link(destination: URL(string: "http://192.168.1.34:8080/oauth2/authorization/github")!) {
                 HStack {
                     Image(.githubLogo)
                         .resizable()

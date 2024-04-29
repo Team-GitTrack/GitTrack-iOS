@@ -12,7 +12,7 @@ enum GithubAPI {
 
 extension GithubAPI: TargetType {
     var baseURL: URL {
-        return URL(string: "http://localhost:8080/github")!
+        return URL(string: "http://192.168.1.34:8080/github")!
     }
     
     var path: String {

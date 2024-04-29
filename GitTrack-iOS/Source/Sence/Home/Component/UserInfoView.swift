@@ -18,7 +18,7 @@ struct UserInfoView: View {
                         .foregroundStyle(.blue600)
                     Text(email)
                         .font(.caption1Regular)
-                        .tint(.gray800)
+                        .foregroundStyle(.gray800)
                 }
                 Text("Followers : \(followers)")
                     .font(.caption1Regular)

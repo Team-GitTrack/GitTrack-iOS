@@ -22,5 +22,7 @@ struct OnbordingView: View {
         .fullScreenCover(isPresented: $viewModel.loginIsRequied) {
             LoginView()
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(.white).ignoresSafeArea())
     }
 }

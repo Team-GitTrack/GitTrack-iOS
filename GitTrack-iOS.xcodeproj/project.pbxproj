@@ -20,6 +20,8 @@
 		724163AF2BD8A26100E6916C /* RepositoryInfoSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163AE2BD8A26100E6916C /* RepositoryInfoSummaryView.swift */; };
 		724163B12BD8C83D00E6916C /* OrganizationReposEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163B02BD8C83D00E6916C /* OrganizationReposEntity.swift */; };
 		724163B32BD8C97F00E6916C /* OrganizationReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163B22BD8C97F00E6916C /* OrganizationReposResponse.swift */; };
+		724163B62BD9FD3D00E6916C /* RepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163B52BD9FD3D00E6916C /* RepositoryView.swift */; };
+		724163B92BDA053100E6916C /* RepositoryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724163B82BDA053100E6916C /* RepositoryInfoView.swift */; };
 		724D44762BA14F2F008FFC5A /* GitTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D44752BA14F2F008FFC5A /* GitTrackApp.swift */; };
 		724D44782BA14F2F008FFC5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D44772BA14F2F008FFC5A /* ContentView.swift */; };
 		724D447A2BA14F30008FFC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724D44792BA14F30008FFC5A /* Assets.xcassets */; };
@@ -77,6 +79,8 @@
 		724163AE2BD8A26100E6916C /* RepositoryInfoSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInfoSummaryView.swift; sourceTree = "<group>"; };
 		724163B02BD8C83D00E6916C /* OrganizationReposEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationReposEntity.swift; sourceTree = "<group>"; };
 		724163B22BD8C97F00E6916C /* OrganizationReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationReposResponse.swift; sourceTree = "<group>"; };
+		724163B52BD9FD3D00E6916C /* RepositoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryView.swift; sourceTree = "<group>"; };
+		724163B82BDA053100E6916C /* RepositoryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInfoView.swift; sourceTree = "<group>"; };
 		724D44722BA14F2F008FFC5A /* GitTrack-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitTrack-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724D44752BA14F2F008FFC5A /* GitTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTrackApp.swift; sourceTree = "<group>"; };
 		724D44772BA14F2F008FFC5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +156,23 @@
 				724163A42BD892AD00E6916C /* OrganizationMemberListView.swift */,
 				724163AC2BD8A1B300E6916C /* RepositoryListView.swift */,
 				724163AE2BD8A26100E6916C /* RepositoryInfoSummaryView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		724163B42BD9FD1F00E6916C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				724163B72BDA052000E6916C /* Component */,
+				724163B52BD9FD3D00E6916C /* RepositoryView.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		724163B72BDA052000E6916C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				724163B82BDA053100E6916C /* RepositoryInfoView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -251,6 +272,7 @@
 		72B6C3492BB0638D007794FB /* Sence */ = {
 			isa = PBXGroup;
 			children = (
+				724163B42BD9FD1F00E6916C /* Repository */,
 				720233A22BD60CE4009BF1D3 /* Organization */,
 				72EC90222BCF668300BC6AFE /* Onbording */,
 				7275E3A82BB684D3005BCEBF /* Home */,
@@ -471,8 +493,10 @@
 				72DF4CE72BB24BB70003BB6C /* Font.swift in Sources */,
 				72DF4CE22BB246300003BB6C /* LoginView.swift in Sources */,
 				729900722BB432DC000A9614 /* GithubService.swift in Sources */,
+				724163B62BD9FD3D00E6916C /* RepositoryView.swift in Sources */,
 				72F086EC2BBFD5D500220B63 /* OrganzationInfoSummaryView.swift in Sources */,
 				724163A92BD8978300E6916C /* OrganizationMemberEntity.swift in Sources */,
+				724163B92BDA053100E6916C /* RepositoryInfoView.swift in Sources */,
 				72EC901D2BCE898C00BC6AFE /* IssueTypeButtonsView.swift in Sources */,
 				724163B12BD8C83D00E6916C /* OrganizationReposEntity.swift in Sources */,
 				72EC901F2BCE8D9500BC6AFE /* IssueTypeButton.swift in Sources */,

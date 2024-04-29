@@ -35,6 +35,7 @@ struct CustomNavigationBarViewModifier: ViewModifier {
                     
                     Text(title)
                         .fontWeight(.semibold)
+                        .foregroundStyle(.black)
                     
                     Spacer()
                 }
