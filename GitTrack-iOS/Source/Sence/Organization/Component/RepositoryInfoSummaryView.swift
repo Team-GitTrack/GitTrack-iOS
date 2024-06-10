@@ -4,9 +4,10 @@ struct RepositoryInfoSummaryView: View {
     let name: String
     let description: String
     let isPrivate: Bool
+    let orgName: String
     
     var body: some View {
-        NavigationLink(destination: RepositoryView(name: name, description: description)) {
+        NavigationLink(destination: RepositoryView(name: name, description: description, orgName: orgName)) {
             HStack {
                 VStack(alignment: .leading, spacing: 3) {
                     Text("\(name)")
@@ -36,5 +37,5 @@ struct RepositoryInfoSummaryView: View {
 }
 
 #Preview {
-    RepositoryInfoSummaryView(name: "lsdjfl", description: "lsdfhl", isPrivate: true)
+    RepositoryInfoSummaryView(name: "lsdjfl", description: "lsdfhl", isPrivate: true, orgName: "lskjdlfj")
 }

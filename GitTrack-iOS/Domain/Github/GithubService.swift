@@ -41,4 +41,23 @@ public class GithubService {
             .map(OrganizationReposResponse.self)
             .map { $0.toDomain() }
     }
+    
+    func getRepositoryLanguages(organization: String, repository: String) -> Single<[LanguageEntity]> {
+        provider.rx.request(.getRepositoryLanguages(organization: organization, repository: repository))
+            .map(RepositoryLanguageResponse.self)
+            .map { $0.toDomain() }
+    }
+    
+    func getRepositoryContributors(organization: String, repository: String) -> Single<[ContributorEntity]> {
+        provider.rx.request(.getRepositoryContributors(organization: organization, repository: repository))
+            .map(RepositoryContributorResponse.self)
+            .map { $0.toDomain() }
+    }
+    
+    func getRepositoryCommits(organization: String, repository: String) -> Single<[CommitsEntity]> {
+        provider.rx.request(.getRepositoryCommits(org: organization, repo: repository))
+            .map(RepositoryCommitResponse.self)
+            .map { $0.commits }
+            .map { $0.map { $0.toDomain() } }
+    }
 }

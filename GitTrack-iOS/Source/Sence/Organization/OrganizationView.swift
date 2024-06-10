@@ -4,15 +4,17 @@ struct OrganizationView: View {
     let organizationName: String
     let description: String
     var body: some View {
-        VStack(spacing: 16) {
-            OrganizationInfoView(organizationName: organizationName, description: description)
-            OrganizationMemberListView(organization: organizationName)
-            RepositoryListView(organization: organizationName)
-            Spacer()
+        ScrollView(showsIndicators: false) {
+            VStack(alignment: .leading, spacing: 0) {
+                OrganizationInfoView(organizationName: organizationName, description: description)
+                OrganizationMemberListView(organization: organizationName)
+                RepositoryListView(organization: organizationName)
+                Spacer()
+            }
+            .padding(.horizontal, 16)
         }
-        .padding(16)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .setCustomNavigationBarTitle(organizationName)
         .background(Color(.blue50).ignoresSafeArea())
+        .ignoresSafeArea(.all, edges: .bottom)
     }
 }

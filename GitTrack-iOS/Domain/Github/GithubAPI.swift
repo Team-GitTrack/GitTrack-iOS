@@ -8,11 +8,14 @@ enum GithubAPI {
     case getIssues(filter: IssueType)
     case getOrganizationMemberList(organization: String)
     case getOrganizationRepos(organization: String)
+    case getRepositoryLanguages(organization: String, repository: String)
+    case getRepositoryContributors(organization: String, repository: String)
+    case getRepositoryCommits(org: String, repo: String)
 }
 
 extension GithubAPI: TargetType {
     var baseURL: URL {
-        return URL(string: "http://192.168.1.34:8080/github")!
+        return URL(string: "http://localhost:8080/github")!
     }
     
     var path: String {
@@ -29,17 +32,18 @@ extension GithubAPI: TargetType {
             return "/\(organization)/members"
         case let .getOrganizationRepos(organization):
             return "/\(organization)/repos"
+        case let .getRepositoryLanguages(organization, repository):
+            return "/\(organization)/\(repository)/languages"
+        case let .getRepositoryContributors(organization, repository):
+            return "/\(organization)/\(repository)/contributors"
+        case let .getRepositoryCommits(org, repo):
+            return "/\(org)/\(repo)/commits"
         }
     }
     
     var validationType: ValidationType { .successCodes }
     
-    var method: Moya.Method {
-        switch self {
-        case .getAccessToken, .getUserInfo, .getOrganizations, .getIssues, .getOrganizationMemberList, .getOrganizationRepos:
-            return .get
-        }
-    }
+    var method: Moya.Method { .get }
     
     var task: Moya.Task {
         switch self {
@@ -57,9 +61,9 @@ extension GithubAPI: TargetType {
     
     var headers: [String : String]? {
         switch self {
-        case .getAccessToken:
+        case .getAccessToken, .getRepositoryLanguages:
             return Header.tokenIsEmpty.header()
-        case .getUserInfo, .getOrganizations, .getIssues, .getOrganizationMemberList, .getOrganizationRepos:
+        case .getUserInfo, .getOrganizations, .getIssues, .getOrganizationMemberList, .getOrganizationRepos, .getRepositoryContributors, .getRepositoryCommits:
             return Header.accessToken.header()
         }
     }

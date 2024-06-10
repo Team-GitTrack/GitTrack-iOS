@@ -16,6 +16,7 @@ struct OrganizationInfoView: View {
             }
             Spacer()
         }
+        .padding(.vertical, 16)
     }
 }
 

@@ -9,14 +9,14 @@ struct RepositoryListView: View {
                     .font(.body2SemiBold)
                     .foregroundStyle(.blue800)
                 
-                ScrollView(showsIndicators: false) {
-                    VStack(spacing: 6) {
-                        ForEach(viewModel.repos, id: \.self) {
-                            RepositoryInfoSummaryView(name: $0.name, description: $0.description, isPrivate: $0.isPrivate)
-                        }
+                VStack(spacing: 6) {
+                    ForEach(viewModel.repos, id: \.self) {
+                        RepositoryInfoSummaryView(name: $0.name, description: $0.description, isPrivate: $0.isPrivate, orgName: organization)
                     }
                 }
+                
             }
+            .padding(.top, 16)
             .onAppear {
                 viewModel.getOrganizationRepos(organization: organization)
             }
